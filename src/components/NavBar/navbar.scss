@@ -1,0 +1,68 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;  // Ensure the body and html take full height
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  position: fixed;  // Fixed navbar, so it stays at the top
+  top: 0;
+  left: 0;
+  width: 100%;  // Full width of the screen
+  height: 100px;  // Adjust based on your design needs
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  z-index: 10;  // Ensure it's above other content
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 40px;
+    height: auto;
+    margin-right: 0.5rem;
+  }
+
+  p {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+}
+
+.categories {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  
+  li {
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #f39c12;  // Hover color
+    }
+  }
+}
+
+.cart-widget {
+  display: flex;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
